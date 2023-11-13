@@ -129,6 +129,12 @@ img {
  ************************************************/
 
 
+ @media screen and (max-width:1160px){
+    
+    .container{
+        width: 100%;
+    }
+}
 @media screen and (max-width:768px){
     
     .container{
@@ -140,14 +146,32 @@ img {
     }
 }
 
-/* @media screen and (max-width:480px){
+@media screen and (max-width:480px){
+    
+    .row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     
     .container{
         width: 100%;
+    }
+    .steps .col {
+        width: 100%;
+    }
+
+    /* .row{
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
     }
-} */
+    
+    .lesson.col {
+        width: 100%;
+    } */
+    
+}
 
 
 
