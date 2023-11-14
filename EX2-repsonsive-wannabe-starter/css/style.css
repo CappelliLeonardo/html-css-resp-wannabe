@@ -148,7 +148,7 @@ img {
 
 @media screen and (max-width:480px){
     
-    .row{
+    /* .row{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -161,17 +161,33 @@ img {
         width: 100%;
     }
 
-    /* .row{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    
-    .lesson.col {
-        width: 100%;
+    .card{
+        padding: 10px 0;
     } */
-    
+
+/*
+    SOLUZIONE mobile
+*/
+    .row{
+        flex-wrap: wrap;
+    }
+
+    .steps .col, .lesson .col,
+    .why-us .col-left,
+    .why-us .col-right {
+        width: 100%;
+    }
+
+    .col:not(:last-child){
+        margin-bottom: 3rem;
+    }
+
+    .steps, .why-us{
+        margin-bottom:0;
+    }
+
+    .why-us{
+        background-color: #222;
+        padding: 3rem 0;
+    }
 }
-
-
-
